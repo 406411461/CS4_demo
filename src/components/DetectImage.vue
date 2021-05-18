@@ -22,17 +22,18 @@ import labels from "raw-loader!../../public/models/labels.txt";
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
+    data() {
+      return {
+          image: 0,
+          numImages: 16,
+          labels: labels,
+          model: null,
+          predictions: []
+        };
+    },
   },
-  data() {
-    return {
-        image: 0,
-        numImages: 16,
-        labels: labels,
-        model: null,
-        predictions: []
-      };
-  },
+  
   computed: {
       getImgIndex() {
           return this.image.toString();
