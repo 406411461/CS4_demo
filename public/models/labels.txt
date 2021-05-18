@@ -1,0 +1,11 @@
+Angry
+Disgusted
+Fearful
+Female
+Happy
+Male
+Middle-age
+Neutral
+Old
+Sad
+Young
